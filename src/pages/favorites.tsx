@@ -13,7 +13,7 @@ const Favorites = () => {
 
   return (
     <div className="container min-vh-100">
-      <h2 className="my-4 text-center text-light">⭐ Your Favorite Movies</h2>
+      <h2 className="my-4 text-center text-light"> Your Favorite Movies</h2>
 
       <FavCards  />
     </div>

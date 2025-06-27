@@ -32,7 +32,7 @@ const Welcome = () => {
     <div className="container min-vh-100">
       <div className="row">
         <div className="col-4"></div>
-        <div className="col-4"> <h1 className="mt-4 text-center text-light">🎬 Movie Explorer</h1></div>
+        <div className="col-4"> <h1 className="mt-4 text-center text-light">🎬 Movies Explorer</h1></div>
         <div className="col-4"></div>
       </div>
       <div className="row">
