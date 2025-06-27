@@ -1,0 +1,36 @@
+
+body {
+  background-color: antiquewhite;
+}
+
+code {
+ 
+}
+
+.card {
+  background-color: dimgray;
+}
+
+
+
+ .navbars {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: transform 0.3s ease; /* Use transform instead of font-size */
+  cursor: pointer;
+  display: inline-block; /* ensures transform doesn't affect others */
+}
+
+.navbars:hover {
+    color: rgb(0, 0, 0);
+  transform: scale(1.25); /* Grows 25% larger on hover */
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
