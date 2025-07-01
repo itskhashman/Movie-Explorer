@@ -31,11 +31,11 @@ interface MovieStore {
     movie: DetailedMovie | null;
     favorites: Movie[];
     loadFavorites: () => void;
-    fetchMovieById: (id: string) => Promise<void>;
+    fetchMovieById: (id: string) => void;
     setSearchName: (name: string) => void;
     setMode: (mode: 'popular' | 'search') => void;
-    fetchPopularMovies: (page?: number) => Promise<void>;
-    fetchSearchResults: (query: string, page?: number) => Promise<void>;
+    fetchPopularMovies: (page?: number) => void;
+    fetchSearchResults: (query: string, page?: number) =>void;
     toggleFavorite: (movie: Movie) => void;
     resetMovies: () => void;
 }
@@ -44,7 +44,7 @@ const apiKey = '37e3693c789cb6f7b9d43086efa1ab39';
 console.log("apiKey : " + apiKey);
 
 
-export const useMovieStore = create<MovieStore>((set, get) => ({
+export const useMovieStore = create<MovieStore>((set) => ({
     movies: [],
     page: 1,
     hasMore: true,

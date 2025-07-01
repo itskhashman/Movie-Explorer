@@ -24,6 +24,22 @@ const FavCards = () => {
                         onClick={() => navigate(`/movie/${movie.id}`)}
                     >
                         <div className="card p-4 bg-light rounded w-100">
+
+                            <div className="row mb-2">
+                                <div className="col-5 d-flex justify-content-start " >
+
+                                    <span className=" btn btn-outline-dark m-1 fs-6 text-nowrap">Year  : {movie.release_date && movie.release_date.trim() !== ""
+                                        ? movie.release_date?.split('-')[0]
+                                        : "Unknown"}</span>
+                                </div>
+                                <div className="col-2 " >
+                                </div>
+                                <div className="col-5 d-flex justify-content-end">
+                                    <span className="btn btn-outline-dark m-1 fs-6 text-nowrap"> ⭐ {movie.vote_average}</span>
+
+                                </div>
+                            </div> 
+
                             <div className="row">
                                 <div className="col-12 text-center">
                                     <img
@@ -45,14 +61,7 @@ const FavCards = () => {
                                 </div>
                             </div>
 
-                            <div className="row">
-                                <div className="col-12 text-center">
-                                    <span className="btn btn-outline-dark m-1 fs-6">
-                                        {movie.release_date?.split('-')[0]}
-                                    </span>
-                                    <span className="btn btn-outline-dark m-1 fs-6">⭐ {movie.vote_average}</span>
-                                </div>
-                            </div>
+                            
 
                             <div className="row mt-2">
                                 <div className="col-12 text-center">

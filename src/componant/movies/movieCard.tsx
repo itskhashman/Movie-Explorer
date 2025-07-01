@@ -40,14 +40,16 @@ const MovieCards = () => {
                     <div className="card px-4 pt-2 pb-4 bg-light rounded w-100">
 
                         <div className="row mb-2">
-                            <div className="col-6 d-flex justify-content-start" >
+                            <div className="col-5 d-flex justify-content-start " >
 
-                                <span className="btn btn-outline-dark m-1 fs-6">Year  : {movie.release_date && movie.release_date.trim() !== ""
+                                <span className= " btn btn-outline-dark m-1 fs-6 text-nowrap">Year  : {movie.release_date && movie.release_date.trim() !== ""
                                     ? movie.release_date?.split('-')[0]
                                     : "Unknown"}</span>
                             </div>
-                            <div className="col-6 d-flex justify-content-end">
-                                <span className="btn btn-outline-dark m-1 fs-6 text-nowrap"> ⭐ {movie.vote_average}/ 10</span>
+                            <div className="col-2 " >
+                                </div>
+                            <div className="col-5 d-flex justify-content-end">
+                                <span className="btn btn-outline-dark m-1 fs-6 text-nowrap"> ⭐ {movie.vote_average}</span>
 
                             </div>
                         </div>
@@ -61,8 +63,7 @@ const MovieCards = () => {
                                             : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png'
                                     }
                                     alt={movie.title}
-                                    width="100%"
-                                    className="rounded hover-zoom"
+                                    className="rounded hover-zoom w-100"
                                 />
                             </div>
                         </div>

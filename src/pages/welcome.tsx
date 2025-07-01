@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import MovieCards from '../componant/movies/movieCard';
 
 const Welcome = () => {
-  const navigate = useNavigate();
   const {
     searchName,
     setSearchName,
